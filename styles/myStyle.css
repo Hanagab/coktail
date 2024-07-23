@@ -1,0 +1,670 @@
+﻿
+
+/*תפריט ניווט*/
+#mainNav {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+ #mainNav ul {     
+        font-size: 1em;
+    }
+
+#mainNav li {
+        text-align: center;
+       padding: 5px 0; 
+        width: 170px;
+    }
+
+#logo {
+    width: 60px;   
+}
+
+#mainNav, #mainList > li, .horizontal {
+    display: inline-block;
+    vertical-align:middle;
+}
+
+.subList {
+    display: none;
+    position: absolute;
+}
+
+.horizontal:hover .subList {
+    display: block;
+
+}
+
+.notActive {
+    cursor:not-allowed;
+    color:dimgray;
+}
+
+.active {
+    color: black;
+}
+
+/*פירורי לחם*/
+#breadNav {
+    margin-right: 15px;
+}
+
+#breadNav ol li{
+    display: inline-block;
+    padding: 2px 1px;
+    font-size:0.9em;
+}
+
+ #breadNav ol li:after {
+     content: " >";
+ }
+
+ #breadNav ol li:last-child:after {
+        content: "";
+    }
+
+    #breadNav ol li a {
+        color: #7b7e5a;
+    }
+    /*footer*/
+footer {
+    background-color: #c6ccbb;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer > a {
+    font-weight:bold;
+    padding: 20px 50px 0px 50px;
+}
+
+ footer p {
+    margin:20px;
+    font-weight:normal;
+}
+
+#footerName {
+    margin-bottom:0;
+}
+
+footer div a img {
+    height:150px;
+    padding:10px;
+}
+
+/*עמוד הבית*/
+#homePageBg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+    #homePageBg video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -1; 
+    }
+#homePageTitle {
+    font-size: 10em;
+    padding-top: 20px;
+}
+
+#tagline {
+    font-size: 3em;
+    margin-top: 20px;
+    color: #7b7e5a;
+}
+
+#titleMainPage {
+    text-align: center;
+    margin-top:10px;
+}
+
+#titleMainPage p {
+    font-size:2em;
+    margin-top: 20px;
+    line-height: 40px;
+}
+
+#sectionLinks {
+    width:90%;
+    margin:auto;
+    text-align: center;
+}
+
+    #sectionLinks img {
+        width: 100px;
+        transition: width 1s;
+    }
+
+#sectionLinks a {
+    display:inline-block;
+    vertical-align:bottom;
+    margin:30px;
+    padding-top:25px;
+}
+
+    #sectionLinks img:hover {
+        width: 130px;
+    }
+
+
+    #sectionLinks p {
+        text-align: center;
+    }
+    /*אודות*/
+    #aboutBg {
+        background-image: url("../image/aboutBg.jpg");
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-position: center; 
+        max-width: 100%;
+        height: auto; 
+    }
+
+#aboutBg h1 {
+    font-size: 2em;
+    text-align:center;
+    padding:20px;
+}
+
+#bodySection {
+    padding-right:40px;
+}
+
+    #bodySection h2 {
+        font-size: 1.5em;
+        color: #7b7e5a;
+        padding:20px 0;
+    }
+
+    #bodySection p, #bodySection ul {
+        line-height: 30px;
+        font-weight: normal;
+    }
+
+  #bodySection p a {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+    #bodySection ul {
+        font-weight: bold;
+        padding:20px 0;
+    }
+
+ #bodySection ul li {
+            text-decoration: underline;
+            list-style-type: none;
+   }
+
+#teaamGallery {
+    width: 100%;
+    text-align: center;
+}
+
+.imagecontainer {
+    display: inline-block;
+    position: relative;
+    width:150px;; 
+    margin: 20px; 
+}
+
+    .imagecontainer img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+
+.imagecontainer:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overText {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    width:100%;
+}
+
+        /*צור קשר*/
+        #contactBg {
+            background-image: url("../image/contact.jpg");
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center; 
+            max-width: 100%;
+            height: auto; 
+            padding-bottom: 40px;
+        }
+
+#titleContact {
+    margin:25px 0;
+    text-align:center;
+}
+
+    #titleContact h1 {
+        font-size:2em;
+        margin-bottom:20px;
+    }
+
+#natanForm {
+    width: 600px;
+    margin: auto;
+    background-color: #ede3cf;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="email"],
+textarea,
+select {
+    width: 96%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-left: 5px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #7b7e5a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+    input[type="submit"]:hover {
+        background-color: #939765;
+    }
+
+/*מפת האתר*/
+
+#mapList {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+}
+
+    #mapList li {
+        text-align: center;
+        padding: 5px 0;
+        width: 170px;
+        list-style:none;
+    }
+
+#mapList, #mapList > li, .horizontal {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#mapBg {
+    background-image: url("../image/siteMap.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    max-width: 100%;
+    height: auto; 
+    padding-bottom:300px;
+}
+
+#siteHeader h1 {
+    font-size: 2em;
+    margin: 20px;
+    text-align:center;
+}
+
+.boldA {
+    font-weight:bold;
+    padding-top:0;
+}
+
+/*ארגון המסיבה*/
+#partyBg {
+    background-image: url("../image/cleanBg.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    max-width: 100%;
+    height: auto; 
+}
+
+#titleParty {
+    text-align:center;
+    padding: 20px;
+}
+
+    #titleParty h2 {
+        font-size:2em;
+        padding-bottom:10px;
+    }
+
+    #titleParty h3 {
+        font-size: 1.5em;
+    }
+
+#PartyBridemade div, #PartyBridemade img {
+    vertical-align: middle;
+}
+
+#PartyBridemade > section {
+    display: block;
+    display:flex;
+    justify-content:center;
+}
+
+#PartyBridemade  div {
+    display:inline-block;
+    width:900px;
+    line-height: 30px;
+}
+
+#PartyBridemade h4 {
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    color: #7b7e5a;
+}
+
+.PartyImg {
+    width: 430px;
+}
+
+#PartyBridemade {
+    width: 90%;
+    margin: auto;
+}
+    /*TDL*/
+    #tdlBg {
+        background-image: url("../image/tdlBg.jpg");
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-position: center; 
+        max-width: 100%;
+        height: auto; 
+        padding-bottom:20px;
+    }
+
+.TDLlist {
+    list-style: disc;
+}
+
+#tdlHeader h1 {
+    font-size:2em;
+    padding:20px;
+    text-align:center;
+}
+
+#tdlHeader p {
+    text-align: center;
+}
+
+#sectionTdl {
+    display:flex;
+    justify-content:center;
+}
+
+#sectionTdl div {
+    display: inline-block;
+    vertical-align: top;
+    margin: 40px;
+    width: 300px;
+}
+
+    #sectionTdl div h2 {
+        font-size: 1.5em;
+        color: #7b7e5a;
+        margin: 20px 0;
+        text-align:center;
+    }
+
+    #sectionTdl ul {
+        height: 400px;
+        line-height: 30px;
+        border: solid 2px black;
+        padding: 20px 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+        #sectionTdl ul:hover {
+            background-color: #ede3cf;
+        }
+
+/*הפרשת חלה*/
+#challaBg {
+    background-image: url("../image/challaBg.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    max-width: 100%;
+    height: auto; 
+    padding-bottom:30px;
+}
+
+#challaHeader h1 {
+    text-align:center;
+    font-size: 2em;
+    padding:20px;
+}
+
+#challaHeader p {
+    width: 75%;
+    margin:auto;
+    text-align:center;
+    line-height: 30px;
+}
+
+#challaSection h2 {
+    font-size: 1.5em;
+    color: #7b7e5a;
+    margin: 20px 30px;
+}
+
+#challaSection ul {
+    width: 80%;
+    margin-right:20px;
+    background-color: #ede3cf;
+    padding:20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    line-height:30px;
+}
+
+#challahContiner {
+    overflow: hidden;
+    margin:20px;
+}
+
+#challaImg {
+    float: left;
+    width: 80%;
+}
+
+#challaImg img {
+   height: 120px;
+    display:inline-block;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:160px;
+}
+
+/*מטלה נגה*/
+
+#cocktail {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+#cocktail > form, #cocktail > div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+    #cocktail > div {
+        margin-top: 20px;
+        margin-right: 100px;
+        width: 700px;
+        text-align:center;
+    }
+
+#coktailVisual h2 {
+    padding: 15px 0;
+    margin-bottom: 10px;
+}
+
+#coktailVisual, #coktailForm {
+    background-color: #ede3cf;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#cupAndDecoration {
+    position: relative; /* מיקום יחסי למיכל */
+    width: 100px; /* גובה המיכל */
+    margin: auto;
+}
+
+    #cupAndDecoration img {
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width:100%;
+        display:none;
+    }
+
+    #cupAndDecoration img.imgShow {
+        display: unset;
+    }
+
+#additions {
+    margin-top: 270px;
+    margin-bottom:30px;
+}
+
+#additions, #snaks {
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    display: flex; 
+    justify-content: center; 
+}
+
+ #additions img, #snaks img {
+        margin: 20px; 
+        height: 100px; 
+        opacity: 50%;
+    }
+
+    #additions img.FullColor, #snaks img.FullColor {
+        opacity: 100%;
+    }
+
+
+
+#coktailForm {
+    width: 300px;
+    margin-top: 20px;
+    background-color: #ede3cf;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+input[type="button"] {
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+    input[type="button"]:disabled {
+        opacity: 50%;
+        cursor: not-allowed;
+        background-color: #7b7e5a;
+    }
+
+    .openBtn {
+        background-color: #7b7e5a;
+        opacity: 100%;
+        cursor: pointer;
+    }
+
+
+.openBtn:hover {
+        background-color: #939765;
+    }
+
+.openDiv {
+    width: 1100px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #ede3cf;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    line-height: 30px;
+}
+
+
+
+

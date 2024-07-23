@@ -1,0 +1,152 @@
+﻿<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>כלה קלילה - בחירת קוקטיל</title>
+    <meta name="description" content="רשימת משימות לקראת החתונה - כל מה שצריך לדעת ולעשות לפני, ביום ואחרי החתונה" />
+    <meta name="keywords" content="כלה קלילה, TDL, רשימת משימות, תכנון חתונה, יום החתונה, אחרי החתונה" />
+    <meta name="author" content="מאי לניאדו, נגה כהן, חנה גביאן" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- CSS -->
+    <link href="../styles/reset.css" rel="stylesheet" />
+    <link href="../styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-3.6.0.min.js"></script>
+    <script src="../jScripts/JavaScript.js" type="text/javascript"></script>
+
+    <!-- favicon -->
+    <link rel="icon" href="../image/favicon&logo.png" />
+</head>
+<body>
+    <div id="container">
+        <div id="tdlBg">
+            <header id="tdlHeader">
+                <nav id="mainNav" aria-label="Main navigation">
+                    <ul id="mainList">
+                        <li class="horizontal">
+                            <b>מסיבת רווקות</b>
+                            <ul class="subList">
+                                <li><a href="bacheloretteParty.html" class="active" aria-label="ארגון המסיבה">ארגון המסיבה</a></li>
+                                <li><a href="#" class="notActive" aria-label="כלות ממליצות">כלות ממליצות</a></li>
+                            </ul>
+                        </li>
+                        <li class="horizontal">
+                            <b>שמחות מקדימות</b>
+                            <ul class="subList">
+                                <li><a href="challah.html" class="active" aria-label="הפרשת חלה">הפרשת חלה</a></li>
+                                <li><a href="#" class="notActive" aria-label="חינה">חינה</a></li>
+                            </ul>
+                        </li>
+                        <li class="horizontal">
+                            <a href="../index.html" aria-label="דף הבית">
+                                <img src="../image/favicon&logo.png" id="logo" alt="דף הבית" />
+                            </a>
+                        </li>
+                        <li class="horizontal">
+                            <b>ארגון החתונה</b>
+                            <ul class="subList">
+                                <li><a href="TDL.html" class="active" aria-label="TDL">TDL</a></li>
+                                <li><a href="#" class="notActive" aria-label="קונספטים">קונספטים</a></li>
+                            </ul>
+                        </li>
+                        <li class="horizontal">
+                            <b>יום החתונה</b>
+                            <ul class="subList">
+                                <li><a href="#" class="notActive" aria-label="טיפים מנצחים">טיפים מנצחים</a></li>
+                                <li><a href="#" class="notActive" aria-label="מעמד החופה">מעמד החופה</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <nav id="breadNav" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="../index.html" aria-label="דף הבית">דף הבית</a></li>
+                        <li aria-label="בחירת קוקטיל">בחירת קוקטיל</li>
+                    </ol>
+                </nav>
+                <h1>בחירת הקוקטיל המושלם</h1>
+                <p>הרכיבו את קוקטיל הדגל של החתונה שלכם</p>
+            </header>
+            <section id="cocktail">
+                <form id="coktailForm">
+                    <fieldset>
+                        <legend>בחר את סוג הקוקטיל:</legend>
+                        <input type="radio" name="drinks" id="aprol" value="אפרול שפריץ" aria-label="אפרול שפריץ" onclick="handleRadio(this)" required /> אפרול שפריץ <br />
+                        <input type="radio" name="drinks" id="margrita" value="מרגריטה" aria-label="מרגריטה" onclick="handleRadio(this)"/> מרגריטה <br />
+                        <input type="radio" name="drinks" id="mohito" value="מוחיטו" aria-label="מוחיטו" onclick="handleRadio(this)" /> מוחיטו <br />
+                        <input type="radio" name="drinks" id="gin" value="ג'ין וטוניק" aria-label="ג'ין וטוניק" onclick="handleRadio(this)" /> ג'ין וטוניק <br />
+                    </fieldset>
+                    <fieldset>
+                        <legend>בחר קישוט לקוקטיל:</legend>
+                        <input type="radio" name="decorate" id="Sstraw" aria-label="קשית" value="קשית" onclick="handleRadio(this)" /> קשית <br />
+                        <input type="radio" name="decorate" id="Cstraw" value="קשית מסולסלת" aria-label="קשית מסולסלת" onclick="handleRadio(this)" /> קשית מסולסלת <br />
+                        <input type="radio" name="decorate" id="umbrlla" value="מטריה" aria-label="מטריה" onclick="handleRadio(this)"/> מטריה <br />
+                    </fieldset>
+                    <fieldset>
+                        <legend>בחר תוספות לקוקטיל:</legend>
+                        <input type="checkbox" name="topings" id="ice" value="קרח" aria-label="קרח" onclick="changeColor(this)" /> קרח <br />
+                        <input type="checkbox" name="topings" id="lemon" value="לימון" aria-label="לימון" onclick="changeColor(this)" /> לימון <br />
+                        <input type="checkbox" name="topings" id="orange" value="תפוז" aria-label="תפוז" onclick="changeColor(this)"  /> תפוז <br />
+                        <input type="checkbox" name="topings" id="mint" value="נענע" aria-label="נענע" onclick="changeColor(this)" /> נענע <br />
+                    </fieldset>
+                    <fieldset>
+                        <legend>בחר נשנושים ליד:</legend>
+                        <input type="checkbox" name="snaks" id="chips" value="צ'יפס" aria-label="צ'יפס" onclick="changeColor(this)" /> צ'יפס <br />
+                        <input type="checkbox" name="snaks" id="bagle" value="בייגלה" aria-label="בייגלה" onclick="changeColor(this)"/> בייגלה <br />
+                        <input type="checkbox" name="snaks" id="nachos" value="נאצ'וס" aria-label="נאצ'וס" onclick="changeColor(this)" /> נאצ'וס <br />
+                        <input type="checkbox" name="snaks" id="popcorn" value="פופקורן" aria-label="פופקורן" onclick="changeColor(this)" /> פופקורן <br />
+                    </fieldset>
+                    <label for="ordersNames">
+                        שמות המזמינים:
+                        <input type="text" id="userNames" />
+                    </label>
+                    <input type="button" id="sumBtn" value="שלח הזמנה" onclick="sumOrder()" disabled/>
+                </form>
+                <div id="coktailVisual">
+                    <h2>הקוקטיל הנבחר</h2>
+                    <div id="cupAndDecoration">
+                        <img id="aprolImg" src="../imageNoga/aprol.png" alt="aprol" />
+                        <img id="aprolCstraw" src="../imageNoga/april&Cstraw.png" alt="aprolAndCstraw" />
+                        <img id="aprolSstraw" src="../imageNoga/april&Sstraw.png" alt="aprolAndSstraw" />
+                        <img id="aprolumbrlla" src="../imageNoga/april&umbrlla.png" alt="aprolAndUmbrlla" />
+                        <img id="ginImg" src="../imageNoga/gin.png" alt="gin" />
+                        <img id="ginCstraw" src="../imageNoga/gin&Cstraw.png" alt="ginAndCstraw" />
+                        <img id="ginSstraw" src="../imageNoga/gin&Sstraw.png" alt="ginAndSstraw" />
+                        <img id="ginumbrlla" src="../imageNoga/gin&umbrlla.png" alt="ginAndUmbrlla" />
+                        <img id="margritaCstraw" src="../imageNoga/margrita&Cstraw.png" alt="margritaAndCstraw" />
+                        <img id="margritaImg" src="../imageNoga/margrita.png" alt="margrita" />
+                        <img id="margritaSstraw" src="../imageNoga/margrita&Sstraw.png" alt="margritaAndSstraw" />
+                        <img id="margritaumbrlla" src="../imageNoga/margrita&umbrlla.png" alt="margritaAndUmbrlla" />
+                        <img id="mohitoCstraw" src="../imageNoga/mohito&Cstraw.png" alt="mohitoAndCstraw" />
+                        <img id="mohitoImg" src="../imageNoga/mohito.png" alt="mohito" />
+                        <img id="mohitoSstraw" src="../imageNoga/mohito&Sstraw.png" alt="mohitoAndSstraw" />
+                        <img id="mohitoumbrlla" src="../imageNoga/mohito&umbrlla.png" alt="mohitoAndUmbrlla" />
+                    </div>
+                    <div id="additions">
+                        <img id="iceImg" src="../imageNoga/ice.png" alt="ice"/>
+                        <img id="lemonImg" src="../imageNoga/lemon.png" alt="lemon"/>
+                        <img id="orangeImg" src="../imageNoga/orange.png" alt="orange"/>
+                        <img id="mintImg" src="../imageNoga/mint.png" alt="mint"/>
+                    </div>
+                    <div id="snaks">
+                        <img id="chipsImg" src="../imageNoga/chips.png" alt="chips" />
+                        <img id="bagleImg" src="../imageNoga/bagel.png" alt="bagel" />
+                        <img id="nachosImg" src="../imageNoga/nachos.png" alt="nachos" />
+                        <img id="popcornImg" src="../imageNoga/popcorn.png" alt="popcorn" />
+                    </div>
+                </div>
+            </section>
+            <div id="printSum"> </div>   
+        </div>
+
+        <footer>
+          <a href="contactUs.html" aria-label="צור קשר">צור קשר</a>
+          <a href="siteMap.html" aria-label="מפת אתר">מפת אתר</a>
+          <a href="about.html" aria-label="אודות">אודות</a>
+          <p>כלה קלילה © 2024</p>
+          <p id="footerName">מאי לניאדו | נגה כהן | חנה גביאן</p>
+        </footer>
+    </div>
+</body>
+</html>
